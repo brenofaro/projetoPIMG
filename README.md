@@ -2,5 +2,5 @@
 
 Baixar bibliotecas
 ```bash
-pip install "qrcode[pil]"
+pip install "qrcode[pil]" matplotlib scipy scikit-image
 ```
