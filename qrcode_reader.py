@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import os
 
+from skimage.io import imshow
+
 DATASET_PATH = 'dataset'
 
 # imagem = '86417714.png'
@@ -55,11 +57,13 @@ if bbox:
 plt.axis("off")
 plt.show()
 
-
-x_min, y_min, x_max, y_max = bbox
-def show_qrcode_detected(x_min, y_min, x_max, y_max):
+def show_qrcode_detected(bbox):
+    x_min, y_min, x_max, y_max = bbox
     return imagem_bin[y_min:y_max, x_min:x_max]
 
+qrcode_detected = show_qrcode_detected(bbox)
+plt.imshow(qrcode_detected, cmap="gray")
+plt.show()
 
 
 
