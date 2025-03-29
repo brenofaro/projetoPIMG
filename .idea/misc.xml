@@ -3,4 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="projetoPI" />
   </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="imageProcessing" project-jdk-type="Python SDK" />
 </project>
