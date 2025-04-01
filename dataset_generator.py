@@ -1,15 +1,10 @@
 import math
-
-import PIL.Image
-import skimage
 import skimage as sk
 import random
 import numpy as np
-import matplotlib.pyplot as plt
 import qrcode
 import os
 from PIL import Image
-from skimage import transform
 
 
 def rotate_matrix(theta):
